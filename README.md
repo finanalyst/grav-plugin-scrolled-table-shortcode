@@ -38,14 +38,14 @@ width: 80
 ```
 
 `enabled` turns on the plugin for the whole site, default is true  
-`height` is the height of the table container in `vh` css units (percentage of viewport height). A range from 10 to 90 is recommended.
+`height` is the height of the table container in `vh` css units (percentage of viewport height). A range from 10 to 90 is recommended.  
 `width` is the width of the table container in `vw` css units (percentage of viewport width). A range from 10 to 90 is recommended.
 
 ## Usage
 In the body of the page:
 ```
 [scrolled-table]
-<!- the content of your table in md format -->
+<!--- the content of your table in md format --->
 [/scrolled-table]
 ```
 For example:
@@ -71,9 +71,11 @@ This will render as:
       <tr><th>Field 1</th><th>Field2</th><th>Field3</th><\tr>
     </thead>
     <tbody>
-      <tr> ..... ETC ETC
-        .... </tr>
-      </tbody>
+      <tr><th>3</th><th>4</th><th>5</th>
+         ..... ETC ETC
+        ....
+      </tr>
+    </tbody>
 </div>
 ```
 The table must have `<thead>` and `<tbody>` sections, which are provided automatically with Markdown in the form in the example.
@@ -82,4 +84,4 @@ The table must have `<thead>` and `<tbody>` sections, which are provided automat
 
 Css solution to table body scrolling based on [this stackoverflow answer by G-Cyr](https://stackoverflow.com/a/23989771).
 
-The cass mixins for the css were developed by [Matthieu Aussaguel]( http://www.mynameismatthieu.com).
+The scss mixins for the css were developed by [Matthieu Aussaguel]( http://www.mynameismatthieu.com).
