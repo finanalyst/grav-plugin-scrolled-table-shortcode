@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* -------------------------------------------------------------
+Using CSS3 Mixins by Matthieu Aussaguel
+more at https://github.com/matthieua/sass-css3-mixins
+(c) Copyright © 2013 Matthieu Aussaguel
+with condition:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+------------------------------------------------------------- */
+.GravScrolledTable {
+  background-color: #FFD3CB;
+  color: #B91D00;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 0;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px; }
+  .GravScrolledTable table {
+    display: flex;
+    flex-flow: column;
+    max-height: 100%;
+    width: 100%; }
+    .GravScrolledTable table thead, .GravScrolledTable table tfoot {
+      -webkit-box-flex: 0 0 auto;
+      -khtml-box-flex: 0 0 auto;
+      -moz-box-flex: 0 0 auto;
+      -ms-box-flex: 0 0 auto;
+      -o-box-flex: 0 0 auto;
+      box-flex: 0 0 auto;
+      width: calc(100% - 0.9em); }
+    .GravScrolledTable table tbody {
+      -webkit-box-flex: 1 1 auto;
+      -khtml-box-flex: 1 1 auto;
+      -moz-box-flex: 1 1 auto;
+      -ms-box-flex: 1 1 auto;
+      -o-box-flex: 1 1 auto;
+      box-flex: 1 1 auto;
+      display: block;
+      overflow-y: scroll; }
+      .GravScrolledTable table tbody tr {
+        width: 100%; }
+    .GravScrolledTable table thead, .GravScrolledTable table tfoot, .GravScrolledTable table tbody tr {
+      display: table;
+      table-layout: fixed; }
+    .GravScrolledTable table thead, .GravScrolledTable table tfoot {
+      color: #00882E;
+      font-size: 125%; }
+    .GravScrolledTable table thead {
+      border-bottom: 2px solid #D72909; }
+    .GravScrolledTable table tfoot {
+      border-top: 2px solid #D72909; }
+    .GravScrolledTable table thead td, .GravScrolledTable table thead th, .GravScrolledTable table tfoot td, .GravScrolledTable table tfoot th, .GravScrolledTable table tbody td, .GravScrolledTable table tbody th {
+      text-align: center; }
+    .GravScrolledTable table tbody tr {
+      border-bottom: 1px solid #F7907C; }
+    .GravScrolledTable table tbody td:first-of-type {
+      text-align: left; }
+
+/*# sourceMappingURL=gravscrolledtable.css.map */

@@ -1,0 +1,32 @@
+name: Scrolled Table Shortcode
+version: '0.1.0'
+description: Provides a table container in which the body of the table scrolls
+icon: table
+author:
+  name: RNH
+  email: rnhainsworth@gmail.com
+homepage: https://github.com/finanalyst/grav-plugin-scrolled-table-shortcode
+bugs: https://github.com/finanalyst/grav-plugin-scrolled-table-shortcode/issues
+keywords: [shortcode,table,css, grav, plugin]
+readme: https://github.com/finanalyst/grav-plugin-scrolled-table-shortcode/README.md
+license: MIT
+
+form:
+  fields:
+    active:
+      type: toggle
+      default: false
+    height:
+      type: range
+      default: 55
+      label: Table Height (em)
+      help: The height of the table container in em units (min: 10, max: 100)
+      min: 10
+      max: 90
+    width:
+      type: range
+      default: 80
+      label: Table Width (vw)
+      help: The width of the table container in em units (min: 10, max: 100)
+      min: 10
+      max: 90
