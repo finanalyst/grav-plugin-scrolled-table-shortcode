@@ -78,8 +78,6 @@ This will render as:
 ```
 The table must have `<thead>` and `<tbody>` sections, which are provided automatically with Markdown in the form in the example.
 
-This short code is designed to work with the fabulous [Tablesorter](https://github.com/Perlkonig/grav-plugin-tablesorter) plugin. So if **Tablesorter** is active, it will pick out the table and provide sorting on it. (The caveats on the tablesorter plugin carry  over here. This short code is known to work with the 'filter' and 'zebra' widgets.)
-
 ## Credits
 
 Css solution to table body scrolling based on [this stackoverflow answer by G-Cyr](https://stackoverflow.com/a/23989771).
