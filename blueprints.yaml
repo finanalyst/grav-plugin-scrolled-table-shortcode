@@ -1,5 +1,5 @@
 name: Scrolled Table Shortcode
-version: '1.0.0'
+version: '1.0.1'
 description: Provides a table container in which the body of the table scrolls
 icon: table
 author:
@@ -10,6 +10,9 @@ bugs: https://github.com/finanalyst/grav-plugin-scrolled-table-shortcode/issues
 keywords: [shortcode,table,css, grav, plugin]
 readme: https://github.com/finanalyst/grav-plugin-scrolled-table-shortcode/README.md
 license: MIT
+
+dependencies:
+  - shortcode-core
 
 form:
   fields:
